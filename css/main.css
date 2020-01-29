@@ -10,7 +10,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: -1;
+	z-index: -2;
 	background-image: url(../img/background.jpg);
 	background-size:contain;
 	opacity: 0.6;
@@ -36,7 +36,7 @@ main{
 	overflow: hidden;
 	background-color: lightgray;
 	box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
-	
+	z-index: 20;
 	
 }
 .head{
@@ -148,14 +148,65 @@ aside{
 	left: 7%;
 	top: 23%;
 	background-color: rgba(33,33,33,0.6);
-	padding: 5px 8px;
+	padding: 10px 15px;
 	border-radius: 10px;
 	color:white;
-	z-index: -1;
-	
+	z-index: 1;
+	display: none;
 }
+
 h2{
 	text-align: center;
 	margin-bottom:20px;
 
+}
+
+aside ul{
+	list-style: none;
+}
+
+button{
+	position: absolute;
+	left: 17%;
+	top:40%;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	font-size: 26px;
+	background-color: beige;
+	font-family: 'Bangers', cursive;
+	animation: rotation 4s infinite linear;
+}
+button:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	background-color: pink;
+}
+
+
+aside span{
+	position: absolute;
+	right: 13px;
+	top:14px;
+	width: 25px;
+	height: 25px;
+	display: block;
+	background-color: #fff;
+}
+aside span img{
+	width:25px;
+}
+aside span :hover{
+	cursor: pointer;
+	background-color: lightgray;
+
+}
+
+@keyframes rotation {
+	from {
+			transform: rotate(0deg);
+	}
+	to {
+			transform: rotate(359deg);
+	}
 }

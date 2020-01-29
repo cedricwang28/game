@@ -8,6 +8,7 @@
 	<title>Mine Sweeper</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Courgette|Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
@@ -433,14 +434,20 @@
 
 	</main>
 
+	<button>Game Rules</button>
+
 	<aside>
+		
 		<h2>Rules of the Game</h2>
-		<p>1. Click to open each block，if there is a bomb，game failed.</p>
-		<p>2. If there is a number on the block，it represents how many mines there are in the surrounding eight blocks.</p>
-		<p>3. To mark a mine that you think there is in a block，press shift+click.</p>
-		<p>4. If mines around a number have all been marked，double click the number to open the remaining blocks.</p>
-		<p>5. When your marks match all mines, you win.</p>
-		<p>6. Click face to restart.</p>
+		<span class="close"><img src="./img/close.png"></span>
+		<ul>
+			<li>1. Click to open each block，if there is a bomb，game failed.</li>
+			<li>2. If there is a number on the block，it represents how many mines there are in the surrounding eight blocks.</li>
+			<li>3. To mark a mine that you think there is in a block，press shift+click.</li>
+			<li>4. If mines around a number have all been marked，double click the number to open the remaining blocks.</li>
+			<li>5. When your marks match all mines, you win.</li>
+			<li>6. Click face to restart.</li>
+		</ul>
 	</aside>
 
 	<audio src="audio/pop.mp3" class="popSound"></audio>
