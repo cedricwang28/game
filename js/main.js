@@ -294,6 +294,15 @@ $(function () {
 
 	});
 
+	$('button').click(function(){
+		$('aside').show(200);
+		$('button').hide(200);
+	});
+	$('aside span').click(function(){
+		$('aside').hide(200);
+		$('button').show(200);
+	});
+
 
 
 

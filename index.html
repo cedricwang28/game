@@ -7,20 +7,16 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Mine Sweeper</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
 
-	<aside>
-		<h2>游戏规则</h2>
-		<p>1.通过单击可挖开方块，如果挖开是地雷，则输掉游戏</p>
-		<p>2.如果方块上是数字，则表示在其周围8个格子内公有多少颗地雷</p>
-		<p>3.要标记您认为可能有地雷的方块，按shift+单击</p>
-		<p>4.如果某数字周围地雷都标记完，可双击该数字，将剩下方块挖开</p>
-		<p>5.当地雷标记与所有地雷都匹配则获胜</p>
-		<p>6.点击笑脸重新开始</p>
-	</aside>
+	<div class="bg"></div>
+
+	<h1 class="title">MINE SWEEPER</h1>
 
 	<main>
 		<div class="head">
@@ -438,14 +434,20 @@
 
 	</main>
 
+	<button>Game Rules</button>
+
 	<aside>
+		
 		<h2>Rules of the Game</h2>
-		<p>1. Click to open each block，if there is a bomb，game failed.</p>
-		<p>2. If there is a number on the block，it represents how many mines there are in the surrounding eight blocks.</p>
-		<p>3. To mark a mine that you think there is in a block，press shift+click.</p>
-		<p>4. If mines around a number have all been marked，double click the number to open the remaining blocks.</p>
-		<p>5. When your marks match all mines, you win.</p>
-		<p>6. Click face to restart.</p>
+		<span class="close"><img src="./img/close.png"></span>
+		<ul>
+			<li>1. Click to open each block，if there is a bomb，game failed.</li>
+			<li>2. If there is a number on the block，it represents how many mines there are in the surrounding eight blocks.</li>
+			<li>3. To mark a mine that you think there is in a block，press shift+click.</li>
+			<li>4. If mines around a number have all been marked，double click the number to open the remaining blocks.</li>
+			<li>5. When your marks match all mines, you win.</li>
+			<li>6. Click face to restart.</li>
+		</ul>
 	</aside>
 
 	<audio src="audio/pop.mp3" class="popSound"></audio>
